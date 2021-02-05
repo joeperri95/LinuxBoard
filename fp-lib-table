@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LinuxBoard)(type KiCad)(uri ${KIPRJMOD}/footprints/LinuxBoard.pretty)(options "")(descr ""))
+)
