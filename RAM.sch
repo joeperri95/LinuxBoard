@@ -27,14 +27,14 @@ $EndComp
 $Comp
 L LinuxBoard:STM32MP151AAB3 U?
 U 4 1 6049E2E1
-P 7350 1450
+P 7850 1250
 AR Path="/601728E9/6049E2E1" Ref="U?"  Part="4" 
-AR Path="/60172A77/6049E2E1" Ref="U?"  Part="4" 
-F 0 "U?" H 8650 1837 60  0000 C CNN
-F 1 "STM32MP151AAB3" H 8650 1731 60  0000 C CNN
-F 2 "LinuxBoard:STM32MP151AAB3" H 8350 1690 60  0001 C CNN
-F 3 "" H 7350 1450 60  0000 C CNN
-	4    7350 1450
+AR Path="/60172A77/6049E2E1" Ref="U1"  Part="4" 
+F 0 "U1" H 9700 1637 60  0000 C CNN
+F 1 "STM32MP151AAB3" H 9700 1531 60  0000 C CNN
+F 2 "LinuxBoard:STM32MP151AAB3" H 8850 1490 60  0001 C CNN
+F 3 "" H 7850 1250 60  0000 C CNN
+	4    7850 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -42,8 +42,8 @@ L LinuxBoard:STM32MP151AAB3 U?
 U 3 1 6049E2E7
 P 4950 1400
 AR Path="/601728E9/6049E2E7" Ref="U?"  Part="3" 
-AR Path="/60172A77/6049E2E7" Ref="U?"  Part="3" 
-F 0 "U?" H 6150 1787 60  0000 C CNN
+AR Path="/60172A77/6049E2E7" Ref="U1"  Part="3" 
+F 0 "U1" H 6150 1787 60  0000 C CNN
 F 1 "STM32MP151AAB3" H 6150 1681 60  0000 C CNN
 F 2 "LinuxBoard:STM32MP151AAB3" H 5950 1640 60  0001 C CNN
 F 3 "" H 4950 1400 60  0000 C CNN
@@ -53,10 +53,10 @@ $EndComp
 Wire Wire Line
 	1350 7100 1350 7200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 60844341
 P 1350 7200
-F 0 "#PWR?" H 1350 6950 50  0001 C CNN
+F 0 "#PWR011" H 1350 6950 50  0001 C CNN
 F 1 "GND" H 1355 7027 50  0000 C CNN
 F 2 "" H 1350 7200 50  0001 C CNN
 F 3 "" H 1350 7200 50  0001 C CNN
@@ -157,37 +157,37 @@ Text Label 4950 1500 2    50   ~ 0
 A1
 Text Label 4950 1400 2    50   ~ 0
 A0
-Text Label 7350 2900 0    50   ~ 0
+Text Label 7750 1550 0    50   ~ 0
 DQ15
-Text Label 7350 2800 0    50   ~ 0
+Text Label 7750 1450 0    50   ~ 0
 DQ14
-Text Label 7350 2700 0    50   ~ 0
+Text Label 7750 1350 0    50   ~ 0
 DQ13
-Text Label 7350 2600 0    50   ~ 0
+Text Label 7750 1250 0    50   ~ 0
 DQ12
-Text Label 7350 2500 0    50   ~ 0
+Text Label 7750 1150 0    50   ~ 0
 DQ11
-Text Label 7350 2400 0    50   ~ 0
+Text Label 7750 1050 0    50   ~ 0
 DQ10
-Text Label 7350 2300 0    50   ~ 0
+Text Label 7750 950  0    50   ~ 0
 DQ9
-Text Label 7350 2200 0    50   ~ 0
+Text Label 7750 850  0    50   ~ 0
 DQ8
-Text Label 7350 2100 0    50   ~ 0
+Text Label 7750 750  0    50   ~ 0
 DQ7
-Text Label 7350 2000 0    50   ~ 0
+Text Label 7750 650  0    50   ~ 0
 DQ6
-Text Label 7350 1900 0    50   ~ 0
+Text Label 7750 550  0    50   ~ 0
 DQ5
-Text Label 7350 1800 0    50   ~ 0
+Text Label 7750 450  0    50   ~ 0
 DQ4
-Text Label 7350 1700 0    50   ~ 0
+Text Label 7750 350  0    50   ~ 0
 DQ3
-Text Label 7350 1600 0    50   ~ 0
+Text Label 7750 250  0    50   ~ 0
 DQ2
-Text Label 7350 1500 0    50   ~ 0
+Text Label 7750 150  0    50   ~ 0
 DQ1
-Text Label 7350 1400 0    50   ~ 0
+Text Label 7750 50   0    50   ~ 0
 DQ0
 Text Label 1000 5900 2    50   ~ 0
 DQ4
@@ -290,10 +290,10 @@ Wire Wire Line
 Wire Wire Line
 	1000 7100 1000 7200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 60E94F4D
 P 1000 7200
-F 0 "#PWR?" H 1000 6950 50  0001 C CNN
+F 0 "#PWR010" H 1000 6950 50  0001 C CNN
 F 1 "GND" H 1005 7027 50  0000 C CNN
 F 2 "" H 1000 7200 50  0001 C CNN
 F 3 "" H 1000 7200 50  0001 C CNN
