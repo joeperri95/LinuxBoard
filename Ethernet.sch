@@ -147,8 +147,6 @@ Wire Wire Line
 	5150 4400 5150 4900
 Wire Wire Line
 	5150 4900 4900 4900
-Wire Wire Line
-	4900 4900 4900 4800
 $Comp
 L power:GND #PWR017
 U 1 1 61275BF5
