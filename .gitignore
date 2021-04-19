@@ -30,3 +30,5 @@ fp-info-cache
 # STM32CubeIDE files
 firmware/*
 
+# Documentation pdf files
+docs/*.pdf
