@@ -85,8 +85,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 1700 7500 1700
 NoConn ~ 7800 1500
-NoConn ~ 7800 1400
-NoConn ~ 7800 1300
 $Comp
 L power:GND #PWR?
 U 1 1 60637B9E
@@ -1209,4 +1207,8 @@ Wire Notes Line
 	6750 750  1100 750 
 Wire Notes Line
 	1100 750  1100 4150
+Text HLabel 7800 1300 2    50   Input ~ 0
+USB_P
+Text HLabel 7800 1400 2    50   Input ~ 0
+USB_N
 $EndSCHEMATC
