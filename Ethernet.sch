@@ -289,11 +289,7 @@ F 3 "" H 5150 3200 50  0001 C CNN
 	1    5150 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 2900 4750 2750
 Connection ~ 4750 2900
-Wire Wire Line
-	5150 2900 5150 2750
 Connection ~ 5150 2900
 $Comp
 L Device:R R8
@@ -344,10 +340,6 @@ F 3 "~" H 7550 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 5800 7550 5750
-Text Label 7550 5650 0    50   ~ 0
-VDD_ETH
-Wire Wire Line
-	7550 5650 7550 5750
 Connection ~ 7550 5750
 $Comp
 L power:GND #PWR020
@@ -367,10 +359,6 @@ Wire Wire Line
 Connection ~ 6900 5750
 Wire Wire Line
 	6900 5750 6900 5800
-Text Label 5150 2750 0    50   ~ 0
-VDD_ETH
-Text Label 4750 2750 0    50   ~ 0
-VDD_ETH
 $Comp
 L power:GND #PWR013
 U 1 1 612EDD5D
@@ -389,12 +377,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2750 3000 2550
 Connection ~ 2400 2750
-Text Label 4800 1050 2    50   ~ 0
-VDD_ETH
-Text Label 4800 1200 2    50   ~ 0
-VDD_ETH
-Wire Wire Line
-	4800 1200 4800 1250
 Text Label 7200 3800 2    50   ~ 0
 25M_OUT
 Text Label 9200 4000 0    50   ~ 0
@@ -480,8 +462,6 @@ $EndComp
 NoConn ~ 7200 3000
 Text HLabel 7200 3100 0    50   Input ~ 0
 RX_DATA_VALID
-Text Label 8750 5650 2    50   ~ 0
-VDD_ETH
 $Comp
 L Device:Ferrite_Bead FB2
 U 1 1 61079906
@@ -527,8 +507,6 @@ Text Label 9900 5650 0    50   ~ 0
 AVDD33
 Text Label 8300 1050 0    50   ~ 0
 AVDD33
-Text Label 8200 1050 2    50   ~ 0
-VDD_ETH
 Wire Wire Line
 	8200 1050 8200 1200
 Connection ~ 8200 1200
@@ -558,8 +536,6 @@ F 3 "" H 9650 5950 50  0001 C CNN
 $EndComp
 Text Label 2950 5350 2    50   ~ 0
 AVDD33
-Text Label 1850 5350 2    50   ~ 0
-VDD_ETH
 $Comp
 L Device:C C57
 U 1 1 610C217C
@@ -638,8 +614,6 @@ F 3 "" H 1850 5700 50  0001 C CNN
 	1    1850 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 5400 1850 5350
 Wire Wire Line
 	2950 5350 2950 5400
 Connection ~ 2950 5400
@@ -911,10 +885,6 @@ RESERVED_2
 Wire Wire Line
 	4950 1900 4950 1550
 Wire Wire Line
-	4800 1050 4950 1050
-Wire Wire Line
-	4950 1050 4950 1250
-Wire Wire Line
 	4750 1900 4950 1900
 Text Label 9200 3400 0    50   ~ 0
 RESERVED_1
@@ -948,4 +918,35 @@ Wire Notes Line
 	6350 5000 10300 5000
 Wire Notes Line
 	6350 850  10300 850 
+Text HLabel 8750 5650 0    50   Input ~ 0
+VDD_ETH
+Text HLabel 8200 1050 0    50   Input ~ 0
+VDD_ETH
+Text HLabel 4750 1150 0    50   Input ~ 0
+VDD_ETH
+Text HLabel 4750 2650 0    50   Input ~ 0
+VDD_ETH
+Text HLabel 5150 2650 2    50   Input ~ 0
+VDD_ETH
+Text HLabel 1850 5300 0    50   Input ~ 0
+VDD_ETH
+Wire Wire Line
+	1850 5300 1850 5400
+Wire Wire Line
+	5150 2650 5150 2900
+Wire Wire Line
+	4750 2650 4750 2900
+Wire Wire Line
+	4750 1150 4800 1150
+Wire Wire Line
+	4800 1150 4800 1250
+Wire Wire Line
+	4800 1150 4950 1150
+Wire Wire Line
+	4950 1150 4950 1250
+Connection ~ 4800 1150
+Text HLabel 7550 5550 2    50   Input ~ 0
+VDD_ETH
+Wire Wire Line
+	7550 5550 7550 5750
 $EndSCHEMATC
