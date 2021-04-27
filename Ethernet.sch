@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -459,9 +459,8 @@ F 3 "" H 4750 6150 50  0001 C CNN
 	1    4750 6150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7200 3000
 Text HLabel 7200 3100 0    50   Input ~ 0
-RX_DATA_VALID
+CRS
 $Comp
 L Device:Ferrite_Bead FB2
 U 1 1 61079906
@@ -949,4 +948,8 @@ Text HLabel 7550 5550 2    50   Input ~ 0
 VDD_ETH
 Wire Wire Line
 	7550 5550 7550 5750
+Text HLabel 7200 3000 0    50   Input ~ 0
+COL
+Wire Wire Line
+	4900 4800 4900 4900
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -81,7 +81,7 @@ F 3 "" H 7500 1700 50  0001 C CNN
 $EndComp
 Connection ~ 7500 1700
 Text Label 9850 4550 0    50   ~ 0
-V_SUPPLY
+V_SUPPLY_IN
 $Comp
 L Device:R R14
 U 1 1 6063A1CC
@@ -334,8 +334,6 @@ Text HLabel 5850 3200 2    50   Input ~ 0
 VDD_AUX
 Wire Wire Line
 	6100 3400 6350 3400
-Wire Wire Line
-	6100 3000 6350 3000
 Wire Wire Line
 	5850 3200 5800 3200
 Connection ~ 5800 3200
@@ -1292,4 +1290,6 @@ Wire Notes Line
 	6950 750  10250 750 
 Wire Notes Line
 	6950 750  6950 2950
+Wire Wire Line
+	6100 3000 6350 3000
 $EndSCHEMATC

@@ -917,4 +917,10 @@ Wire Notes Line
 	4650 5050 7000 5050
 Text HLabel 10750 2350 2    50   Input ~ 0
 VBUSOTG
+Text HLabel 10750 1000 2    50   Input ~ 0
+NRST
+Wire Wire Line
+	10750 1000 10750 1150
+Text Notes 3450 7100 0    50   ~ 0
+NOTE not 3v3\n
 $EndSCHEMATC

@@ -26,19 +26,6 @@ F 3 "" H 1050 1100 60  0000 C CNN
 	6    1050 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L LinuxBoard:STM32MP151AAB3 U?
-U 5 1 60484467
-P 3850 1100
-AR Path="/60172A77/60484467" Ref="U?"  Part="5" 
-AR Path="/601728E9/60484467" Ref="U1"  Part="5" 
-F 0 "U1" H 5150 1487 60  0000 C CNN
-F 1 "STM32MP151AAB3" H 5150 1381 60  0000 C CNN
-F 2 "LinuxBoard:STM32MP151AAB3" H 4850 1340 60  0001 C CNN
-F 3 "" H 3850 1100 60  0000 C CNN
-	5    3850 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 5700 1050 5600
 Connection ~ 1050 1200
@@ -314,176 +301,10 @@ Wire Wire Line
 Connection ~ 3050 6300
 Wire Wire Line
 	3050 6300 3050 6400
-Wire Wire Line
-	3850 2800 3850 2900
-Connection ~ 3850 2900
-Wire Wire Line
-	3850 2900 3850 3000
-Connection ~ 3850 3000
-Wire Wire Line
-	3850 3000 3850 3100
-Connection ~ 3850 3100
-Wire Wire Line
-	3850 3100 3850 3200
-Connection ~ 3850 3200
-Wire Wire Line
-	3850 3200 3850 3300
-Connection ~ 3850 3300
-Wire Wire Line
-	3850 3300 3850 3400
-Connection ~ 3850 3400
-Wire Wire Line
-	3850 3400 3850 3500
-Connection ~ 3850 3500
-Wire Wire Line
-	3850 3500 3850 3600
-Connection ~ 3850 3600
-Wire Wire Line
-	3850 3600 3850 3700
-Connection ~ 3850 3700
-Wire Wire Line
-	3850 3700 3850 3800
-Connection ~ 3850 3800
-Wire Wire Line
-	3850 3800 3850 3900
-Connection ~ 3850 3900
-Wire Wire Line
-	3850 3900 3850 4000
-Connection ~ 3850 4000
-Wire Wire Line
-	3850 4000 3850 4100
-Connection ~ 3850 4100
-Wire Wire Line
-	3850 4100 3850 4200
-Connection ~ 3850 4200
-Wire Wire Line
-	3850 4200 3850 4300
-Connection ~ 3850 4300
-Wire Wire Line
-	3850 4300 3850 4400
-Connection ~ 3850 4400
-Wire Wire Line
-	3850 4400 3850 4500
-Connection ~ 3850 4500
-Wire Wire Line
-	3850 4500 3850 4600
-Connection ~ 3850 4600
-Wire Wire Line
-	3850 4600 3850 4700
-Connection ~ 3850 4700
-Wire Wire Line
-	3850 4700 3850 4800
-Connection ~ 3850 4800
-Wire Wire Line
-	3850 4800 3850 4900
-Connection ~ 3850 4900
-Wire Wire Line
-	3850 4900 3850 5000
-Connection ~ 3850 5000
-Wire Wire Line
-	3850 5000 3850 5100
-Connection ~ 3850 5100
-Wire Wire Line
-	3850 5100 3850 5200
-Connection ~ 3850 5200
-Wire Wire Line
-	3850 5200 3850 5300
-Connection ~ 3850 5300
-Wire Wire Line
-	3850 5300 3850 5400
-Connection ~ 3850 5400
-Wire Wire Line
-	3850 5400 3850 5500
-Connection ~ 3850 5500
-Wire Wire Line
-	3850 5500 3850 5600
-Connection ~ 3850 5600
-Wire Wire Line
-	3850 5600 3850 5700
-Connection ~ 3850 5700
-Wire Wire Line
-	3850 5700 3850 5800
-Connection ~ 3850 5800
-Wire Wire Line
-	3850 5800 3850 5900
-Connection ~ 3850 5900
-Wire Wire Line
-	3850 5900 3850 6000
-Connection ~ 3850 6000
-Wire Wire Line
-	3850 6000 3850 6100
-Wire Wire Line
-	3850 2400 3850 2300
-Connection ~ 3850 1200
-Wire Wire Line
-	3850 1200 3850 1100
-Connection ~ 3850 1300
-Wire Wire Line
-	3850 1300 3850 1200
-Connection ~ 3850 1400
-Wire Wire Line
-	3850 1400 3850 1300
-Connection ~ 3850 1500
-Wire Wire Line
-	3850 1500 3850 1400
-Connection ~ 3850 1600
-Wire Wire Line
-	3850 1600 3850 1500
-Connection ~ 3850 1700
-Wire Wire Line
-	3850 1700 3850 1600
-Connection ~ 3850 1800
-Wire Wire Line
-	3850 1800 3850 1700
-Connection ~ 3850 1900
-Wire Wire Line
-	3850 1900 3850 1800
-Connection ~ 3850 2000
-Wire Wire Line
-	3850 2000 3850 1900
-Connection ~ 3850 2100
-Wire Wire Line
-	3850 2100 3850 2000
-Connection ~ 3850 2200
-Wire Wire Line
-	3850 2200 3850 2100
-Connection ~ 3850 2300
-Wire Wire Line
-	3850 2300 3850 2200
-Wire Wire Line
-	6450 2200 6450 2300
-Connection ~ 6450 2300
-Wire Wire Line
-	6450 2300 6450 2400
-Connection ~ 6450 2400
-Wire Wire Line
-	6450 2400 6450 2500
-Connection ~ 6450 2500
-Wire Wire Line
-	6450 2500 6450 2600
-Connection ~ 6450 2600
-Wire Wire Line
-	6450 2600 6450 2700
-Connection ~ 6450 2700
-Wire Wire Line
-	6450 2700 6450 2800
-Connection ~ 6450 2800
-Wire Wire Line
-	6450 2800 6450 2900
-Connection ~ 6450 2900
-Wire Wire Line
-	6450 2900 6450 3000
-Connection ~ 6450 3000
-Wire Wire Line
-	6450 3000 6450 3100
-Connection ~ 6450 3100
-Wire Wire Line
-	6450 3100 6450 3200
 Text Label 3750 1100 2    50   ~ 0
 VDD
 Wire Wire Line
 	3750 1100 3850 1100
-Connection ~ 3850 1100
 NoConn ~ 6450 5400
 NoConn ~ 6450 5300
 NoConn ~ 6450 5200
@@ -1148,8 +969,6 @@ Connection ~ 10100 3200
 Wire Wire Line
 	10100 3000 10450 3000
 Connection ~ 10100 3000
-Wire Wire Line
-	10100 2700 10450 2700
 Connection ~ 10100 2700
 $Comp
 L Device:C C34
@@ -1224,10 +1043,6 @@ Text Label 6450 3600 0    50   ~ 0
 VDDA1V1
 Text Label 6450 3800 0    50   ~ 0
 VDDA1V8
-Text Label 6450 4000 0    50   ~ 0
-VDD3V3_USBFS
-Text Label 6450 4200 0    50   ~ 0
-VDD3V3_USBHS
 Text Label 9100 800  2    50   ~ 0
 VDDA1V1
 $Comp
@@ -1289,19 +1104,6 @@ Wire Wire Line
 Text Notes 7300 2900 0    50   ~ 0
 Net Aliases
 $Comp
-L Device:Ferrite_Bead FB?
-U 1 1 61A9B365
-P 8050 3450
-AR Path="/60172AD8/61A9B365" Ref="FB?"  Part="1" 
-AR Path="/601728E9/61A9B365" Ref="FB3"  Part="1" 
-F 0 "FB3" V 7776 3450 50  0000 C CNN
-F 1 "Ferrite_Bead" V 7867 3450 50  0000 C CNN
-F 2 "" V 7980 3450 50  0001 C CNN
-F 3 "~" H 8050 3450 50  0001 C CNN
-	1    8050 3450
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 61A9B36B
 P 8200 3600
@@ -1329,7 +1131,6 @@ F 3 "~" H 8600 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8200 3450 8600 3450
-Connection ~ 8200 3450
 Wire Wire Line
 	7700 3450 7900 3450
 Wire Wire Line
@@ -1417,4 +1218,240 @@ Wire Notes Line
 	9300 1850 9300 2950
 Wire Notes Line
 	9300 2950 7200 2950
+Wire Wire Line
+	3050 5900 3050 5700
+Wire Wire Line
+	3050 5700 3050 5500
+Connection ~ 3050 5700
+Wire Wire Line
+	1050 5900 1050 5700
+Connection ~ 1050 5900
+Connection ~ 1050 5700
+Wire Wire Line
+	3050 5900 3050 6100
+Connection ~ 3050 5900
+Connection ~ 3050 6100
+Wire Wire Line
+	3050 5500 3050 5300
+Connection ~ 3050 5500
+Connection ~ 3050 5300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 609CDD62
+P 8600 3450
+F 0 "#FLG0101" H 8600 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 3623 50  0000 C CNN
+F 2 "" H 8600 3450 50  0001 C CNN
+F 3 "~" H 8600 3450 50  0001 C CNN
+	1    8600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L6
+U 1 1 609E388D
+P 8050 3450
+F 0 "L6" V 8240 3450 50  0000 C CNN
+F 1 "4.7u" V 8149 3450 50  0000 C CNN
+F 2 "" H 8050 3450 50  0001 C CNN
+F 3 "~" H 8050 3450 50  0001 C CNN
+	1    8050 3450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8200 3450
+Connection ~ 3850 2100
+Wire Wire Line
+	3850 2400 3850 2300
+Connection ~ 3850 2300
+Wire Wire Line
+	3850 2100 3850 2000
+Connection ~ 3850 2000
+Wire Wire Line
+	3850 2000 3850 1900
+Connection ~ 3850 1900
+Wire Wire Line
+	6450 3100 6450 3200
+Connection ~ 6450 3100
+Wire Wire Line
+	3850 6000 3850 6100
+Connection ~ 3850 6000
+Wire Wire Line
+	3850 2300 3850 2200
+Wire Wire Line
+	3850 2200 3850 2100
+Connection ~ 3850 2200
+Wire Wire Line
+	3850 1900 3850 1800
+Connection ~ 3850 1800
+Wire Wire Line
+	3850 1800 3850 1700
+Connection ~ 3850 1700
+Wire Wire Line
+	3850 1700 3850 1600
+Connection ~ 3850 1600
+Wire Wire Line
+	6450 3000 6450 3100
+Connection ~ 6450 3000
+Wire Wire Line
+	3850 5900 3850 6000
+Connection ~ 3850 5900
+Wire Wire Line
+	3850 5800 3850 5900
+Connection ~ 3850 5800
+Wire Wire Line
+	3850 1600 3850 1500
+Connection ~ 3850 1500
+Wire Wire Line
+	3850 1500 3850 1400
+Connection ~ 3850 1400
+Wire Wire Line
+	6450 2900 6450 3000
+Connection ~ 6450 2900
+Connection ~ 3850 5500
+Wire Wire Line
+	3850 5700 3850 5800
+Connection ~ 3850 5700
+Connection ~ 3850 4200
+Wire Wire Line
+	3850 1400 3850 1300
+Connection ~ 3850 1300
+Wire Wire Line
+	3850 1300 3850 1200
+Wire Wire Line
+	3850 1200 3850 1100
+Connection ~ 3850 1200
+Wire Wire Line
+	6450 2800 6450 2900
+Connection ~ 6450 2800
+Wire Wire Line
+	3850 5600 3850 5700
+Wire Wire Line
+	3850 5500 3850 5600
+Connection ~ 3850 5600
+Wire Wire Line
+	3850 5400 3850 5500
+Connection ~ 3850 5400
+Wire Wire Line
+	3850 4100 3850 4200
+Connection ~ 3850 4100
+Connection ~ 3850 1100
+Wire Wire Line
+	6450 2700 6450 2800
+Connection ~ 6450 2700
+Wire Wire Line
+	3850 5300 3850 5400
+Connection ~ 3850 5300
+Wire Wire Line
+	3850 5200 3850 5300
+Connection ~ 3850 5200
+Wire Wire Line
+	3850 4000 3850 4100
+Connection ~ 3850 4000
+Wire Wire Line
+	3850 3900 3850 4000
+Connection ~ 3850 3900
+Wire Wire Line
+	6450 2600 6450 2700
+Connection ~ 6450 2600
+Wire Wire Line
+	3850 5100 3850 5200
+Connection ~ 3850 5100
+Wire Wire Line
+	3850 5000 3850 5100
+Connection ~ 3850 5000
+Wire Wire Line
+	3850 3800 3850 3900
+Connection ~ 3850 3800
+Wire Wire Line
+	3850 3700 3850 3800
+Connection ~ 3850 3700
+Wire Wire Line
+	3850 3600 3850 3700
+Connection ~ 3850 3600
+Wire Wire Line
+	6450 2500 6450 2600
+Connection ~ 6450 2500
+Wire Wire Line
+	3850 4900 3850 5000
+Connection ~ 3850 4900
+Wire Wire Line
+	3850 4800 3850 4900
+Connection ~ 3850 4800
+Wire Wire Line
+	3850 3500 3850 3600
+Connection ~ 3850 3500
+Wire Wire Line
+	3850 3400 3850 3500
+Connection ~ 3850 3400
+Wire Wire Line
+	3850 3300 3850 3400
+Connection ~ 3850 3300
+Wire Wire Line
+	6450 2400 6450 2500
+Connection ~ 6450 2400
+Wire Wire Line
+	3850 4700 3850 4800
+Connection ~ 3850 4700
+Wire Wire Line
+	3850 3200 3850 3300
+Connection ~ 3850 3200
+Wire Wire Line
+	3850 3100 3850 3200
+Connection ~ 3850 3100
+Wire Wire Line
+	3850 3000 3850 3100
+Connection ~ 3850 3000
+Wire Wire Line
+	6450 2300 6450 2400
+Wire Wire Line
+	6450 2200 6450 2300
+Connection ~ 6450 2300
+Wire Wire Line
+	3850 4600 3850 4700
+Connection ~ 3850 4600
+Wire Wire Line
+	3850 4500 3850 4600
+Connection ~ 3850 4500
+Wire Wire Line
+	3850 2900 3850 3000
+Wire Wire Line
+	3850 2800 3850 2900
+Connection ~ 3850 2900
+Wire Wire Line
+	3850 4400 3850 4500
+Connection ~ 3850 4400
+Wire Wire Line
+	3850 4300 3850 4400
+Wire Wire Line
+	3850 4200 3850 4300
+Connection ~ 3850 4300
+$Comp
+L LinuxBoard:STM32MP151AAB3 U?
+U 5 1 60484467
+P 3850 1100
+AR Path="/60172A77/60484467" Ref="U?"  Part="5" 
+AR Path="/601728E9/60484467" Ref="U1"  Part="5" 
+F 0 "U1" H 5150 1487 60  0000 C CNN
+F 1 "STM32MP151AAB3" H 5150 1381 60  0000 C CNN
+F 2 "LinuxBoard:STM32MP151AAB3" H 4850 1340 60  0001 C CNN
+F 3 "" H 3850 1100 60  0000 C CNN
+	5    3850 1100
+	1    0    0    -1  
+$EndComp
+Text Label 10450 2200 0    50   ~ 0
+VDD
+Wire Wire Line
+	10100 2200 10450 2200
+Wire Wire Line
+	10100 2700 10450 2700
+Text Label 10450 2700 0    50   ~ 0
+VDD
+Text Label 10450 3200 0    50   ~ 0
+VDD
+Wire Wire Line
+	6450 4000 6450 4200
+Text HLabel 6600 4000 2    50   Input ~ 0
+USB_3V3
+Wire Wire Line
+	6600 4000 6450 4000
+Connection ~ 6450 4000
 $EndSCHEMATC

@@ -25,7 +25,7 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
+#*.csv I want this
 
 # STM32CubeIDE files
 firmware/*
