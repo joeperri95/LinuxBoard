@@ -50,19 +50,6 @@ F 3 "~" H 9050 1100 50  0001 C CNN
 	1    9050 1100
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Ferrite_Bead FB?
-U 1 1 60637B8B
-P 8200 1100
-AR Path="/601728C0/60637B8B" Ref="FB?"  Part="1" 
-AR Path="/60172B24/60637B8B" Ref="FB1"  Part="1" 
-F 0 "FB1" V 7926 1100 50  0000 C CNN
-F 1 "Ferrite_Bead" V 8017 1100 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 8130 1100 50  0001 C CNN
-F 3 "~" H 8200 1100 50  0001 C CNN
-	1    8200 1100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7400 1700 7500 1700
 NoConn ~ 7800 1500
@@ -117,7 +104,7 @@ F 3 "" H 9850 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9850 5350 9850 5300
-Text Label 5600 6700 2    50   ~ 0
+Text Label 5550 6700 2    50   ~ 0
 PGND
 Text Label 2950 1900 2    50   ~ 0
 PGND
@@ -159,8 +146,6 @@ Wire Wire Line
 	2200 2000 2050 2000
 Wire Wire Line
 	2050 2000 2050 1800
-Wire Wire Line
-	2050 1800 2950 1800
 $Comp
 L Device:L L2
 U 1 1 60F03A6C
@@ -309,14 +294,12 @@ Wire Wire Line
 Connection ~ 5800 3400
 Wire Wire Line
 	4950 3400 5300 3400
-Text HLabel 3000 6600 2    50   Input ~ 0
+Text HLabel 3450 6600 2    50   Input ~ 0
 VBUS_HOST
 Text HLabel 3000 4600 2    50   Input ~ 0
 VTT_DDR3
 Text HLabel 1850 4600 2    50   Input ~ 0
 VREF_DDR
-Text HLabel 3000 5300 2    50   Input ~ 0
-VOUT_LDO2
 Text HLabel 1850 5300 2    50   Input ~ 0
 VOUT_LDO1
 Text HLabel 3000 5950 2    50   Input ~ 0
@@ -425,8 +408,6 @@ Text HLabel 1800 5950 2    50   Input ~ 0
 VDD_USB
 Text Label 2950 2800 2    50   ~ 0
 PGND
-Text HLabel 2950 3000 0    50   Input ~ 0
-PMIC_PONKEY_N
 Text HLabel 2950 1400 0    50   Input ~ 0
 PMIC_RESET_N
 Text HLabel 2950 1500 0    50   Input ~ 0
@@ -689,37 +670,6 @@ F 3 "" H 1750 5650 50  0001 C CNN
 	1    1750 5650
 	1    0    0    -1  
 $EndComp
-Text Label 2800 5300 2    50   ~ 0
-LDO2OUT
-$Comp
-L Device:C C73
-U 1 1 6173BB67
-P 2900 5500
-F 0 "C73" H 3015 5546 50  0000 L CNN
-F 1 "4.7u" H 3015 5455 50  0000 L CNN
-F 2 "" H 2938 5350 50  0001 C CNN
-F 3 "~" H 2900 5500 50  0001 C CNN
-	1    2900 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5350 2900 5300
-Wire Wire Line
-	2900 5300 2800 5300
-Wire Wire Line
-	2900 5300 3000 5300
-Connection ~ 2900 5300
-$Comp
-L power:GND #PWR0116
-U 1 1 6173BB71
-P 2900 5650
-F 0 "#PWR0116" H 2900 5400 50  0001 C CNN
-F 1 "GND" H 2905 5477 50  0000 C CNN
-F 2 "" H 2900 5650 50  0001 C CNN
-F 3 "" H 2900 5650 50  0001 C CNN
-	1    2900 5650
-	1    0    0    -1  
-$EndComp
 Text Label 1600 5950 2    50   ~ 0
 LDO4OUT
 $Comp
@@ -830,8 +780,6 @@ Wire Wire Line
 	2900 6650 2900 6600
 Wire Wire Line
 	2900 6600 2800 6600
-Wire Wire Line
-	2900 6600 3000 6600
 Connection ~ 2900 6600
 $Comp
 L power:GND #PWR0120
@@ -1050,39 +998,6 @@ Text Label 4950 3500 0    50   ~ 0
 BUCK4IN
 Text Label 4950 2400 0    50   ~ 0
 VBUSOTG
-Text Label 4000 5950 2    50   ~ 0
-VBUSOTG
-Text HLabel 4200 5950 2    50   Input ~ 0
-VBUS_OTG
-$Comp
-L Device:C C76
-U 1 1 618A2F29
-P 4100 6150
-F 0 "C76" H 4215 6196 50  0000 L CNN
-F 1 "4.7u" H 4215 6105 50  0000 L CNN
-F 2 "" H 4138 6000 50  0001 C CNN
-F 3 "~" H 4100 6150 50  0001 C CNN
-	1    4100 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 6000 4100 5950
-Wire Wire Line
-	4100 5950 4000 5950
-Wire Wire Line
-	4100 5950 4200 5950
-Connection ~ 4100 5950
-$Comp
-L power:GND #PWR0127
-U 1 1 618A2F33
-P 4100 6300
-F 0 "#PWR0127" H 4100 6050 50  0001 C CNN
-F 1 "GND" H 4105 6127 50  0000 C CNN
-F 2 "" H 4100 6300 50  0001 C CNN
-F 3 "" H 4100 6300 50  0001 C CNN
-	1    4100 6300
-	1    0    0    -1  
-$EndComp
 Text Notes 1200 7350 0    50   ~ 0
 Output decoupling capacitors
 Connection ~ 8500 5300
@@ -1097,23 +1012,23 @@ Input decoupling capacitors\n
 $Comp
 L power:GND #PWR029
 U 1 1 60FFDCB0
-P 5600 6800
-F 0 "#PWR029" H 5600 6550 50  0001 C CNN
-F 1 "GND" H 5605 6627 50  0000 C CNN
-F 2 "" H 5600 6800 50  0001 C CNN
-F 3 "" H 5600 6800 50  0001 C CNN
-	1    5600 6800
+P 5550 6800
+F 0 "#PWR029" H 5550 6550 50  0001 C CNN
+F 1 "GND" H 5555 6627 50  0000 C CNN
+F 2 "" H 5550 6800 50  0001 C CNN
+F 3 "" H 5550 6800 50  0001 C CNN
+	1    5550 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 6800 5600 6700
+	5550 6800 5550 6700
 Text Notes 7150 2800 0    50   ~ 0
 Power inputs
 Text Notes 1200 4050 0    50   ~ 0
 PMIC\n
 Text Notes 9700 5750 0    50   ~ 0
 Power LED indicators
-Text Notes 5250 7150 0    50   ~ 0
+Text Notes 5200 7150 0    50   ~ 0
 GND alias\n
 Wire Notes Line
 	1100 7450 4750 7450
@@ -1124,13 +1039,13 @@ Wire Notes Line
 Wire Notes Line
 	1100 4400 1100 7450
 Wire Notes Line
-	5150 7250 5150 6550
+	5100 7250 5100 6550
 Wire Notes Line
-	5150 6550 5800 6550
+	5100 6550 5750 6550
 Wire Notes Line
-	5800 6550 5800 7250
+	5750 6550 5750 7250
 Wire Notes Line
-	5800 7250 5150 7250
+	5750 7250 5100 7250
 Wire Notes Line
 	9450 6400 9450 4400
 Wire Notes Line
@@ -1155,9 +1070,9 @@ Wire Notes Line
 	6750 750  1100 750 
 Wire Notes Line
 	1100 750  1100 4150
-Text HLabel 7800 1300 2    50   Input ~ 0
+Text HLabel 8050 1300 2    50   Input ~ 0
 USB_P
-Text HLabel 7800 1400 2    50   Input ~ 0
+Text HLabel 8050 1400 2    50   Input ~ 0
 USB_N
 $Comp
 L Connector:Barrel_Jack J7
@@ -1262,8 +1177,6 @@ $EndComp
 Wire Wire Line
 	7750 2250 8000 2250
 Wire Wire Line
-	7800 1100 8050 1100
-Wire Wire Line
 	8850 2250 8700 2250
 Wire Wire Line
 	9150 2250 9300 2250
@@ -1276,10 +1189,6 @@ Wire Wire Line
 Connection ~ 9300 1650
 Wire Wire Line
 	9300 1650 9300 1100
-Text Label 9450 1650 0    50   ~ 0
-V_SUPPLY_IN
-Wire Wire Line
-	9450 1650 9300 1650
 Text Notes 8150 2500 0    50   ~ 0
 Choose diodes such that DC takes precedence
 Wire Notes Line
@@ -1292,4 +1201,203 @@ Wire Notes Line
 	6950 750  6950 2950
 Wire Wire Line
 	6100 3000 6350 3000
+$Comp
+L Device:R R34
+U 1 1 60E1534B
+P 3150 6600
+F 0 "R34" V 2943 6600 50  0000 C CNN
+F 1 "0" V 3034 6600 50  0000 C CNN
+F 2 "" V 3080 6600 50  0001 C CNN
+F 3 "~" H 3150 6600 50  0001 C CNN
+	1    3150 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 6600 3000 6600
+$Comp
+L power:GND #PWR0116
+U 1 1 6173BB71
+P 2900 5650
+F 0 "#PWR0116" H 2900 5400 50  0001 C CNN
+F 1 "GND" H 2905 5477 50  0000 C CNN
+F 2 "" H 2900 5650 50  0001 C CNN
+F 3 "" H 2900 5650 50  0001 C CNN
+	1    2900 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5300
+Wire Wire Line
+	2900 5300 3000 5300
+Wire Wire Line
+	2900 5300 2800 5300
+Wire Wire Line
+	2900 5350 2900 5300
+$Comp
+L Device:C C73
+U 1 1 6173BB67
+P 2900 5500
+F 0 "C73" H 3015 5546 50  0000 L CNN
+F 1 "4.7u" H 3015 5455 50  0000 L CNN
+F 2 "" H 2938 5350 50  0001 C CNN
+F 3 "~" H 2900 5500 50  0001 C CNN
+	1    2900 5500
+	1    0    0    -1  
+$EndComp
+Text Label 2800 5300 2    50   ~ 0
+LDO2OUT
+Text HLabel 3000 5300 2    50   Input ~ 0
+VOUT_LDO2
+$Comp
+L power:GND #PWR0127
+U 1 1 618A2F33
+P 4100 6300
+F 0 "#PWR0127" H 4100 6050 50  0001 C CNN
+F 1 "GND" H 4105 6127 50  0000 C CNN
+F 2 "" H 4100 6300 50  0001 C CNN
+F 3 "" H 4100 6300 50  0001 C CNN
+	1    4100 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 5950
+Wire Wire Line
+	4100 5950 4200 5950
+Wire Wire Line
+	4100 5950 4000 5950
+Wire Wire Line
+	4100 6000 4100 5950
+$Comp
+L Device:C C76
+U 1 1 618A2F29
+P 4100 6150
+F 0 "C76" H 4215 6196 50  0000 L CNN
+F 1 "4.7u" H 4215 6105 50  0000 L CNN
+F 2 "" H 4138 6000 50  0001 C CNN
+F 3 "~" H 4100 6150 50  0001 C CNN
+	1    4100 6150
+	1    0    0    -1  
+$EndComp
+Text HLabel 4200 5950 2    50   Input ~ 0
+VBUS_OTG
+Text Label 4000 5950 2    50   ~ 0
+VBUSOTG
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60F3BCED
+P 7650 3500
+AR Path="/60172A77/60F3BCED" Ref="SW?"  Part="1" 
+AR Path="/60172B24/60F3BCED" Ref="SW5"  Part="1" 
+F 0 "SW5" V 7604 3648 50  0000 L CNN
+F 1 "SW_Push" V 7695 3648 50  0000 L CNN
+F 2 "" H 7650 3700 50  0001 C CNN
+F 3 "~" H 7650 3700 50  0001 C CNN
+	1    7650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F3BCF7
+P 7500 3700
+AR Path="/60172A77/60F3BCF7" Ref="#PWR?"  Part="1" 
+AR Path="/60172B24/60F3BCF7" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 7500 3450 50  0001 C CNN
+F 1 "GND" H 7505 3527 50  0000 C CNN
+F 2 "" H 7500 3700 50  0001 C CNN
+F 3 "" H 7500 3700 50  0001 C CNN
+	1    7500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3700 7650 3700
+Text Notes 7050 4050 0    50   ~ 0
+Reset Button\n
+Text Label 7650 3300 2    50   ~ 0
+PONKEY_N
+Wire Notes Line
+	6950 3050 6950 4150
+Wire Notes Line
+	6950 4150 8350 4150
+Wire Notes Line
+	8350 4150 8350 3050
+Wire Notes Line
+	8350 3050 6950 3050
+Text Label 2950 3000 2    50   ~ 0
+PONKEY_N
+Wire Wire Line
+	9450 1650 9300 1650
+Text Label 9450 1650 0    50   ~ 0
+V_SUPPLY_IN
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60637B8B
+P 8200 1100
+AR Path="/601728C0/60637B8B" Ref="FB?"  Part="1" 
+AR Path="/60172B24/60637B8B" Ref="FB1"  Part="1" 
+F 0 "FB1" V 7926 1100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 8017 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 8130 1100 50  0001 C CNN
+F 3 "~" H 8200 1100 50  0001 C CNN
+	1    8200 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6101333B
+P 7950 5300
+F 0 "TP1" H 8008 5418 50  0000 L CNN
+F 1 "TestPoint" H 8008 5327 50  0000 L CNN
+F 2 "" H 8150 5300 50  0001 C CNN
+F 3 "~" H 8150 5300 50  0001 C CNN
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+Text Label 8350 1650 0    50   ~ 0
+VBUSOTG
+$Comp
+L Device:R R35
+U 1 1 610A006A
+P 8150 1650
+F 0 "R35" V 8250 1700 50  0000 C CNN
+F 1 "0" V 8250 1600 50  0000 C CNN
+F 2 "" V 8080 1650 50  0001 C CNN
+F 3 "~" H 8150 1650 50  0001 C CNN
+	1    8150 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 1650 8350 1650
+Wire Wire Line
+	8000 1650 7950 1650
+Wire Wire Line
+	7950 1650 7950 1100
+Wire Wire Line
+	7800 1100 7950 1100
+Connection ~ 7950 1100
+Wire Wire Line
+	7950 1100 8050 1100
+Wire Wire Line
+	8050 1400 7800 1400
+Wire Wire Line
+	7800 1300 8050 1300
+Wire Wire Line
+	2050 1800 2950 1800
+Wire Wire Line
+	3300 6600 3350 6600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 611C8FCC
+P 3500 6500
+F 0 "#FLG0103" H 3500 6575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 6673 50  0000 C CNN
+F 2 "" H 3500 6500 50  0001 C CNN
+F 3 "~" H 3500 6500 50  0001 C CNN
+	1    3500 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6500 3350 6500
+Wire Wire Line
+	3350 6500 3350 6600
+Connection ~ 3350 6600
+Wire Wire Line
+	3350 6600 3450 6600
 $EndSCHEMATC

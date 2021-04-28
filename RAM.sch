@@ -97,12 +97,6 @@ Text Label 4200 3200 0    50   ~ 0
 A12
 Text Label 4200 2000 0    50   ~ 0
 A11
-Text Label 4850 2600 2    50   ~ 0
-A15
-Text Label 4850 2500 2    50   ~ 0
-A14
-Text Label 4850 2400 2    50   ~ 0
-A13
 Text Label 4850 2300 2    50   ~ 0
 A12
 Text Label 4850 2200 2    50   ~ 0
@@ -409,8 +403,6 @@ Text Label 7250 2900 0    50   ~ 0
 UDM
 Text Label 7250 2800 0    50   ~ 0
 LDM
-Text Label 8050 2750 2    50   ~ 0
-DDRVREF
 Text Label 8050 2950 2    50   ~ 0
 CK_N
 Text Label 8050 3050 2    50   ~ 0
@@ -586,8 +578,6 @@ F 3 "" H 1900 7200 50  0001 C CNN
 	1    1900 7200
 	1    0    0    -1  
 $EndComp
-Text Label 10750 1750 0    50   ~ 0
-3V3
 Text Label 10750 3350 0    50   ~ 0
 3V3
 Text Label 10750 1150 0    50   ~ 0
@@ -653,8 +643,6 @@ F 3 "~" H 10550 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10550 4500
-Text Label 10550 4200 0    50   ~ 0
-3V3
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_20 J5
 U 1 1 609DF11E
@@ -666,8 +654,6 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_d
 	1    8100 5150
 	1    0    0    -1  
 $EndComp
-Text Label 8000 4200 0    50   ~ 0
-3V3
 Wire Wire Line
 	8000 4200 8000 4350
 Wire Wire Line
@@ -778,17 +764,6 @@ Text Notes 7350 6150 0    50   ~ 0
 JTAG connector\n
 Text Notes 9900 5200 0    50   ~ 0
 Reset Button\n
-$Comp
-L power:GND #PWR035
-U 1 1 614383F1
-P 8050 3450
-F 0 "#PWR035" H 8050 3200 50  0001 C CNN
-F 1 "GND" H 8055 3277 50  0000 C CNN
-F 2 "" H 8050 3450 50  0001 C CNN
-F 3 "" H 8050 3450 50  0001 C CNN
-	1    8050 3450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R33
 U 1 1 61444559
@@ -923,4 +898,17 @@ Wire Wire Line
 	10750 1000 10750 1150
 Text Notes 3450 7100 0    50   ~ 0
 NOTE not 3v3\n
+Text Label 8050 2750 2    50   ~ 0
+DDRVREF
+Text HLabel 8000 4200 0    50   Input ~ 0
+3V3
+Text HLabel 10550 4200 0    50   Input ~ 0
+3V3
+Text HLabel 10750 1750 2    50   Input ~ 0
+3V3
+Text HLabel 8050 3450 0    50   Input ~ 0
+3V3
+NoConn ~ 4850 2500
+NoConn ~ 4850 2600
+NoConn ~ 4850 2400
 $EndSCHEMATC

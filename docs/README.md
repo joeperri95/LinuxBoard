@@ -33,3 +33,9 @@ AN5284 [Power consumption](https://www.st.com/resource/en/application_note/dm005
 AN5168 [DDR configuration](https://www.st.com/resource/en/application_note/dm00505673-ddr-configuration-on-stm32mp1-series-mpus-stmicroelectronics.pdf) 
 
 AN5122 [DDR routing guide](https://www.st.com/resource/en/application_note/dm00462392-stm32mp1-series-ddr-memory-routing-guidelines-stmicroelectronics.pdf)
+
+### STPMIC1
+
+AN5440 [I2C guide](https://www.st.com/content/ccc/resource/technical/document/application_note/group1/7b/0a/d4/45/3c/49/46/01/DM00682242/files/DM00682242.pdf/jcr:content/translations/en.DM00682242.pdf)
+
+AN5260 [Battery power guide](https://www.st.com/content/ccc/resource/technical/document/application_note/group1/f6/03/98/aa/9f/fd/4a/03/DM00564136/files/DM00564136.pdf/jcr:content/translations/en.DM00564136.pdf) 

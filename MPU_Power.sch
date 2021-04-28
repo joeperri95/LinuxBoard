@@ -434,7 +434,7 @@ VSS
 Wire Wire Line
 	10450 2050 10100 2050
 Text Label 3850 2800 2    50   ~ 0
-VDDCORE
+VDD_CORE
 Text Label 7700 5550 2    50   ~ 0
 VDDCORE
 $Comp
@@ -680,8 +680,6 @@ Wire Wire Line
 Connection ~ 8050 6000
 Text Label 9500 6300 0    50   ~ 0
 VSS
-Text Label 6450 2200 0    50   ~ 0
-VDDQ_DDR
 Text Label 7750 5050 2    50   ~ 0
 VDDQ_DDR
 $Comp
@@ -1039,10 +1037,6 @@ Wire Wire Line
 Connection ~ 9250 4900
 Connection ~ 8950 4900
 Connection ~ 10150 4900
-Text Label 6450 3600 0    50   ~ 0
-VDDA1V1
-Text Label 6450 3800 0    50   ~ 0
-VDDA1V8
 Text Label 9100 800  2    50   ~ 0
 VDDA1V1
 $Comp
@@ -1099,8 +1093,6 @@ Wire Wire Line
 	8200 2100 8050 2100
 Text Label 8200 2250 0    50   ~ 0
 VDD_CORE
-Wire Wire Line
-	8200 2250 8050 2250
 Text Notes 7300 2900 0    50   ~ 0
 Net Aliases
 $Comp
@@ -1454,4 +1446,32 @@ USB_3V3
 Wire Wire Line
 	6600 4000 6450 4000
 Connection ~ 6450 4000
+Text HLabel 6550 2200 2    50   Input ~ 0
+VDDQ_DDR
+Wire Wire Line
+	6550 2200 6450 2200
+Connection ~ 6450 2200
+Text Label 8200 2400 0    50   ~ 0
+VSS
+$Comp
+L power:GND #PWR0101
+U 1 1 6120E799
+P 8100 2450
+F 0 "#PWR0101" H 8100 2200 50  0001 C CNN
+F 1 "GND" H 8105 2277 50  0000 C CNN
+F 2 "" H 8100 2450 50  0001 C CNN
+F 3 "" H 8100 2450 50  0001 C CNN
+	1    8100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2450 8100 2400
+Wire Wire Line
+	8100 2400 8200 2400
+Wire Wire Line
+	8200 2250 8050 2250
+Text HLabel 6450 3600 2    50   Input ~ 0
+VDDA1V1
+Text HLabel 6450 3800 2    50   Input ~ 0
+VDDA1V8
 $EndSCHEMATC

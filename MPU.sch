@@ -354,7 +354,6 @@ Wire Notes Line
 	750  550  750  4850
 NoConn ~ 4150 2850
 NoConn ~ 4150 2750
-NoConn ~ 4150 2350
 NoConn ~ 4150 2050
 NoConn ~ 4150 1650
 NoConn ~ 4150 1750
@@ -366,9 +365,6 @@ NoConn ~ 5500 1550
 NoConn ~ 5500 1750
 NoConn ~ 5500 1850
 NoConn ~ 5500 1950
-NoConn ~ 5500 2050
-NoConn ~ 5500 2150
-NoConn ~ 5500 2250
 NoConn ~ 5500 2350
 NoConn ~ 5500 2550
 NoConn ~ 5500 2950
@@ -502,8 +498,6 @@ Text Label 1650 5650 2    50   ~ 0
 GPIO2
 Text Label 1650 5550 2    50   ~ 0
 GPIO1
-Text Label 3700 5850 2    50   ~ 0
-VDD
 Text Label 7850 5650 0    50   ~ 0
 USB1_N
 Text Label 7850 5550 0    50   ~ 0
@@ -731,8 +725,6 @@ Wire Wire Line
 Connection ~ 9100 4950
 Wire Wire Line
 	9100 5000 9100 4950
-Text Label 9350 4500 0    50   ~ 0
-VDD
 Wire Wire Line
 	9350 4600 9600 4600
 Wire Wire Line
@@ -833,8 +825,6 @@ Wire Wire Line
 	9300 2900 9300 3150
 Wire Wire Line
 	9300 2150 9300 2300
-Text Label 9300 2150 0    50   ~ 0
-VDD
 Wire Wire Line
 	9650 3300 9800 3300
 Wire Wire Line
@@ -912,10 +902,6 @@ F 3 "~" H 9100 2600 50  0001 C CNN
 $EndComp
 Text Notes 8750 1750 0    50   ~ 0
 I2C Pull ups\n
-Wire Wire Line
-	9600 750  9600 900 
-Text Label 9600 750  0    50   ~ 0
-VDD
 Wire Wire Line
 	9600 900  9750 900 
 Connection ~ 9600 900 
@@ -998,4 +984,21 @@ GPIO6
 NoConn ~ 5500 2450
 Text Label 4150 3950 0    50   ~ 0
 GPIO5
+NoConn ~ 1750 3350
+Text HLabel 3700 5850 0    50   Input ~ 0
+VDD
+Text HLabel 9350 4500 0    50   Input ~ 0
+VDD
+Text HLabel 9300 2150 0    50   Input ~ 0
+VDD
+Text HLabel 9600 700  0    50   Input ~ 0
+VDD
+Wire Wire Line
+	9600 700  9600 900 
+Text HLabel 4150 2350 2    50   Input ~ 0
+PMIC_INT_N
+Text HLabel 5500 2250 0    50   Input ~ 0
+PMIC_WAKEUP
+NoConn ~ 5500 2050
+NoConn ~ 5500 2150
 $EndSCHEMATC
