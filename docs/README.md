@@ -24,6 +24,8 @@ TN-41-13 [Routing guide](https://www.micron.com/-/media/client/global/Documents/
 
 ### STM32MP151
 
+[Errata](https://www.st.com/resource/en/errata_sheet/dm00516256-stm32mp151x3x7x-device-errata-stmicroelectronics.pdf)
+
 AN2867 [Oscillator design guide](https://www.st.com/content/ccc/resource/technical/document/application_note/c6/eb/5e/11/e3/69/43/eb/CD00221665.pdf/files/CD00221665.pdf/jcr:content/translations/en.CD00221665.pdf)
 
 AN5031 [HW design guide](https://www.st.com/resource/en/application_note/dm00389996-getting-started-with-stm32mp151-stm32mp153-and-stm32mp157-line-hardware-development-stmicroelectronics.pdf)

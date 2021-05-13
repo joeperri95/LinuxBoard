@@ -644,102 +644,18 @@ F 3 "~" H 10550 4350 50  0001 C CNN
 $EndComp
 Connection ~ 10550 4500
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_20 J5
-U 1 1 609DF11E
-P 8100 5150
-F 0 "J5" H 7571 5196 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_20" H 9150 5950 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical" H 8550 4100 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 7750 3900 50  0001 C CNN
-	1    8100 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 4200 8000 4350
-Wire Wire Line
-	8000 4350 8100 4350
-Connection ~ 8000 4350
-Text Label 10750 1550 0    50   ~ 0
-NJTRST
-Text Label 8700 4650 0    50   ~ 0
-NJTRST
-Text Label 8700 5350 0    50   ~ 0
-JTDI
-$Comp
 L power:GND #PWR031
 U 1 1 60A09FC6
-P 8000 5950
-F 0 "#PWR031" H 8000 5700 50  0001 C CNN
-F 1 "GND" H 8005 5777 50  0000 C CNN
-F 2 "" H 8000 5950 50  0001 C CNN
-F 3 "" H 8000 5950 50  0001 C CNN
-	1    8000 5950
+P 8200 5750
+F 0 "#PWR031" H 8200 5500 50  0001 C CNN
+F 1 "GND" H 8205 5577 50  0000 C CNN
+F 2 "" H 8200 5750 50  0001 C CNN
+F 3 "" H 8200 5750 50  0001 C CNN
+	1    8200 5750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R30
-U 1 1 60A0BA82
-P 9050 5800
-F 0 "R30" H 9120 5846 50  0000 L CNN
-F 1 "10K" H 9120 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8980 5800 50  0001 C CNN
-F 3 "~" H 9050 5800 50  0001 C CNN
-	1    9050 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R29
-U 1 1 60A0BE91
-P 8800 5800
-F 0 "R29" H 8870 5846 50  0000 L CNN
-F 1 "10k" H 8870 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8730 5800 50  0001 C CNN
-F 3 "~" H 8800 5800 50  0001 C CNN
-	1    8800 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 5650 8800 5650
-Wire Wire Line
-	8700 5550 9050 5550
-Wire Wire Line
-	9050 5550 9050 5650
-$Comp
-L power:GND #PWR032
-U 1 1 60A0FFD6
-P 8800 5950
-F 0 "#PWR032" H 8800 5700 50  0001 C CNN
-F 1 "GND" H 8805 5777 50  0000 C CNN
-F 2 "" H 8800 5950 50  0001 C CNN
-F 3 "" H 8800 5950 50  0001 C CNN
-	1    8800 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 5950 9050 5950
-Connection ~ 8800 5950
-Text Label 10750 1350 0    50   ~ 0
-JTDI
-Text Label 8700 4750 0    50   ~ 0
+Text Label 8700 4850 0    50   ~ 0
 NRST
-$Comp
-L Device:R R31
-U 1 1 60A2D5B2
-P 9300 5800
-F 0 "R31" H 9370 5846 50  0000 L CNN
-F 1 "10K" H 9370 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9230 5800 50  0001 C CNN
-F 3 "~" H 9300 5800 50  0001 C CNN
-	1    9300 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5950 9300 5950
-Connection ~ 9050 5950
-Wire Wire Line
-	9300 5650 9300 4950
-Wire Wire Line
-	9300 4950 8700 4950
 Text Label 8700 5150 0    50   ~ 0
 SWDIO
 Text Label 8700 5250 0    50   ~ 0
@@ -900,7 +816,7 @@ Text Notes 3450 7100 0    50   ~ 0
 NOTE not 3v3\n
 Text Label 8050 2750 2    50   ~ 0
 DDRVREF
-Text HLabel 8000 4200 0    50   Input ~ 0
+Text HLabel 8100 4400 0    50   Input ~ 0
 3V3
 Text HLabel 10550 4200 0    50   Input ~ 0
 3V3
@@ -911,4 +827,25 @@ Text HLabel 8050 3450 0    50   Input ~ 0
 NoConn ~ 4850 2500
 NoConn ~ 4850 2600
 NoConn ~ 4850 2400
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J5
+U 1 1 609DA9D3
+P 8200 5150
+F 0 "J5" H 7757 5196 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 9200 6000 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 8200 5150 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 7850 3900 50  0001 C CNN
+	1    8200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5750 8200 5750
+Connection ~ 8200 5750
+NoConn ~ 8700 5350
+NoConn ~ 10750 1550
+NoConn ~ 10750 1350
+Wire Wire Line
+	8100 4400 8200 4400
+Wire Wire Line
+	8200 4400 8200 4550
 $EndSCHEMATC
