@@ -296,7 +296,6 @@ Text HLabel 3700 6900 2    50   Input ~ 0
 VDDR
 Text Label 1000 5500 2    50   ~ 0
 VREFDQ
-NoConn ~ 1000 1200
 Text Label 4200 1600 0    50   ~ 0
 RESET_N
 Text Label 4200 3700 0    50   ~ 0

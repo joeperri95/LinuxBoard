@@ -1064,17 +1064,6 @@ USB_P
 Text HLabel 8050 1400 2    50   Input ~ 0
 USB_N
 $Comp
-L Connector:Barrel_Jack J7
-U 1 1 61B3572E
-P 7450 2350
-F 0 "J7" H 7400 2700 50  0000 C CNN
-F 1 "Barrel_Jack" H 7400 2600 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 7500 2310 50  0001 C CNN
-F 3 "~" H 7500 2310 50  0001 C CNN
-	1    7450 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG?
 U 1 1 61B46631
 P 8850 1650
@@ -1400,4 +1389,18 @@ F 3 "" H 2950 1400 60  0000 C CNN
 	1    2950 1400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J7
+U 1 1 609E9DC9
+P 7450 2350
+F 0 "J7" H 7507 2667 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 7507 2576 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 7500 2310 50  0001 C CNN
+F 3 "~" H 7500 2310 50  0001 C CNN
+	1    7450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2450 7750 2350
+Connection ~ 7750 2450
 $EndSCHEMATC
