@@ -216,8 +216,6 @@ F 3 "" H 8100 4500 50  0001 C CNN
 	1    8100 4500
 	1    0    0    -1  
 $EndComp
-Text Notes 9150 4550 2    50   ~ 0
-Separate these grounds\n
 $Comp
 L power:GND #PWR019
 U 1 1 61281321

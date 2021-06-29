@@ -434,4 +434,78 @@ Wire Wire Line
 Connection ~ 6950 2050
 Wire Wire Line
 	6950 2050 7100 2050
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60E8FE8D
+P 2100 5850
+F 0 "H?" H 2200 5899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2050 6050 50  0000 L CNN
+F 2 "" H 2100 5850 50  0001 C CNN
+F 3 "~" H 2100 5850 50  0001 C CNN
+	1    2100 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60E9127A
+P 1750 6300
+F 0 "H?" H 1850 6349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1700 6550 50  0000 L CNN
+F 2 "" H 1750 6300 50  0001 C CNN
+F 3 "~" H 1750 6300 50  0001 C CNN
+	1    1750 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60E9329A
+P 2100 6300
+F 0 "H?" H 2200 6349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1600 6550 50  0000 L CNN
+F 2 "" H 2100 6300 50  0001 C CNN
+F 3 "~" H 2100 6300 50  0001 C CNN
+	1    2100 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60E95D0C
+P 1750 5850
+F 0 "H?" H 1850 5899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1250 6050 50  0000 L CNN
+F 2 "" H 1750 5850 50  0001 C CNN
+F 3 "~" H 1750 5850 50  0001 C CNN
+	1    1750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5950 1750 5950
+Wire Wire Line
+	1750 5950 1750 6200
+Connection ~ 1750 5950
+Wire Wire Line
+	1750 6200 2100 6200
+Wire Wire Line
+	2100 6200 2100 6050
+Connection ~ 1750 6200
+Connection ~ 2100 6200
+Connection ~ 2100 5950
+Wire Wire Line
+	2100 6050 2250 6050
+Wire Wire Line
+	2250 6050 2250 6100
+Connection ~ 2100 6050
+Wire Wire Line
+	2100 6050 2100 5950
+$Comp
+L power:GND #PWR?
+U 1 1 60E9D149
+P 2250 6100
+F 0 "#PWR?" H 2250 5850 50  0001 C CNN
+F 1 "GND" H 2255 5927 50  0000 C CNN
+F 2 "" H 2250 6100 50  0001 C CNN
+F 3 "" H 2250 6100 50  0001 C CNN
+	1    2250 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

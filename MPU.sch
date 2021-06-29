@@ -984,7 +984,6 @@ GPIO6
 NoConn ~ 5500 2450
 Text Label 4150 3950 0    50   ~ 0
 GPIO5
-NoConn ~ 1750 3350
 Text HLabel 3700 5850 0    50   Input ~ 0
 VDD
 Text HLabel 9350 4500 0    50   Input ~ 0
@@ -1001,4 +1000,6 @@ Text HLabel 5500 2250 0    50   Input ~ 0
 PMIC_WAKEUP
 NoConn ~ 5500 2050
 NoConn ~ 5500 2150
+Text HLabel 1750 3350 0    50   Input ~ 0
+I2C_SCL
 $EndSCHEMATC
