@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -1060,9 +1060,9 @@ Wire Notes Line
 Wire Notes Line
 	1100 750  1100 4150
 Text HLabel 8050 1300 2    50   Input ~ 0
-USB_P
+USB2_P
 Text HLabel 8050 1400 2    50   Input ~ 0
-USB_N
+USB2_N
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 61B46631

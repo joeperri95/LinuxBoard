@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -577,94 +577,6 @@ F 3 "" H 1900 7200 50  0001 C CNN
 $EndComp
 Text Label 10750 3350 0    50   ~ 0
 3V3
-Text Label 10750 1150 0    50   ~ 0
-NRST
-Text Label 10750 2750 0    50   ~ 0
-NRST
-Text Label 10050 4500 2    50   ~ 0
-NRST
-$Comp
-L Device:C C92
-U 1 1 60982E4F
-P 10200 4650
-F 0 "C92" H 10315 4696 50  0000 L CNN
-F 1 "C" H 10315 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10238 4500 50  0001 C CNN
-F 3 "~" H 10200 4650 50  0001 C CNN
-	1    10200 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10050 4500 10200 4500
-$Comp
-L Switch:SW_Push SW4
-U 1 1 60987974
-P 10550 4700
-F 0 "SW4" V 10504 4848 50  0000 L CNN
-F 1 "SW_Push" V 10595 4848 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10550 4900 50  0001 C CNN
-F 3 "~" H 10550 4900 50  0001 C CNN
-	1    10550 4700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10200 4500 10550 4500
-Connection ~ 10200 4500
-Wire Wire Line
-	10200 4800 10200 4900
-Wire Wire Line
-	10200 4900 10400 4900
-$Comp
-L power:GND #PWR033
-U 1 1 60997F96
-P 10400 4900
-F 0 "#PWR033" H 10400 4650 50  0001 C CNN
-F 1 "GND" H 10405 4727 50  0000 C CNN
-F 2 "" H 10400 4900 50  0001 C CNN
-F 3 "" H 10400 4900 50  0001 C CNN
-	1    10400 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 10400 4900
-Wire Wire Line
-	10400 4900 10550 4900
-$Comp
-L Device:R R32
-U 1 1 609BE69F
-P 10550 4350
-F 0 "R32" H 10620 4396 50  0000 L CNN
-F 1 "10k" H 10620 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 4350 50  0001 C CNN
-F 3 "~" H 10550 4350 50  0001 C CNN
-	1    10550 4350
-	1    0    0    -1  
-$EndComp
-Connection ~ 10550 4500
-$Comp
-L power:GND #PWR031
-U 1 1 60A09FC6
-P 8200 5750
-F 0 "#PWR031" H 8200 5500 50  0001 C CNN
-F 1 "GND" H 8205 5577 50  0000 C CNN
-F 2 "" H 8200 5750 50  0001 C CNN
-F 3 "" H 8200 5750 50  0001 C CNN
-	1    8200 5750
-	1    0    0    -1  
-$EndComp
-Text Label 8700 4850 0    50   ~ 0
-NRST
-Text Label 8700 5150 0    50   ~ 0
-SWDIO
-Text Label 8700 5250 0    50   ~ 0
-SWO
-Text Label 8700 5050 0    50   ~ 0
-SWDCLK
-Text Label 10750 2950 0    50   ~ 0
-SWDIO
-Text Label 10750 3550 0    50   ~ 0
-SWO
-Text Label 10750 3150 0    50   ~ 0
-SWDCLK
 Text Notes 2850 7400 0    50   ~ 0
 Supply aliases\n
 Text Notes 750  7400 0    50   ~ 0
@@ -673,10 +585,6 @@ Text Notes 4500 7350 0    50   ~ 0
 Decoupling Vref
 Text Notes 5300 4900 0    50   ~ 0
 Pull downs per datasheet
-Text Notes 7350 6150 0    50   ~ 0
-JTAG connector\n
-Text Notes 9900 5200 0    50   ~ 0
-Reset Button\n
 $Comp
 L Device:R R33
 U 1 1 61444559
@@ -706,22 +614,6 @@ Text HLabel 10750 2150 2    50   Input ~ 0
 PWR_ON
 Text Label 6550 4200 0    50   ~ 0
 USB_RREF
-Wire Notes Line
-	9800 5300 9800 4050
-Wire Notes Line
-	9800 4050 11100 4050
-Wire Notes Line
-	11100 4050 11100 5300
-Wire Notes Line
-	11100 5300 9800 5300
-Wire Notes Line
-	9550 6300 9550 4050
-Wire Notes Line
-	9550 4050 7250 4050
-Wire Notes Line
-	7250 4050 7250 6300
-Wire Notes Line
-	7250 6300 9550 6300
 Wire Wire Line
 	3200 7050 3200 7000
 Connection ~ 3200 7000
@@ -805,18 +697,10 @@ Wire Notes Line
 	4650 5050 7000 5050
 Text HLabel 10750 2350 2    50   Input ~ 0
 VBUSOTG
-Text HLabel 10750 1000 2    50   Input ~ 0
-NRST
-Wire Wire Line
-	10750 1000 10750 1150
 Text Notes 3450 7100 0    50   ~ 0
 NOTE not 3v3\n
 Text Label 8050 2750 2    50   ~ 0
 DDRVREF
-Text HLabel 8100 4400 0    50   Input ~ 0
-3V3
-Text HLabel 10550 4200 0    50   Input ~ 0
-3V3
 Text HLabel 10750 1750 2    50   Input ~ 0
 3V3
 Text HLabel 8050 3450 0    50   Input ~ 0
@@ -824,27 +708,8 @@ Text HLabel 8050 3450 0    50   Input ~ 0
 NoConn ~ 4850 2500
 NoConn ~ 4850 2600
 NoConn ~ 4850 2400
-$Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J5
-U 1 1 609DA9D3
-P 8200 5150
-F 0 "J5" H 7757 5196 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 9200 6000 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 8200 5150 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 7850 3900 50  0001 C CNN
-	1    8200 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 5750 8200 5750
-Connection ~ 8200 5750
-NoConn ~ 8700 5350
 NoConn ~ 10750 1550
 NoConn ~ 10750 1350
-Wire Wire Line
-	8100 4400 8200 4400
-Wire Wire Line
-	8200 4400 8200 4550
 $Comp
 L Device:R R30
 U 1 1 60DBE80F
@@ -900,4 +765,139 @@ Wire Notes Line
 	4650 6300 4650 5200
 Text Notes 5500 6200 0    50   ~ 0
 Termination\n
+Text Label 10750 3550 0    50   ~ 0
+SWO
+Text Label 10750 2750 0    50   ~ 0
+NRST
+Text Label 10750 3150 0    50   ~ 0
+SWDCLK
+Text Label 10750 2950 0    50   ~ 0
+SWDIO
+Text HLabel 10750 1000 2    50   Input ~ 0
+NRST
+Wire Wire Line
+	10750 1000 10750 1150
+Text Label 10750 1150 0    50   ~ 0
+NRST
+Wire Wire Line
+	8200 4400 8200 4550
+Wire Wire Line
+	8100 4400 8200 4400
+NoConn ~ 8700 5350
+Wire Wire Line
+	8100 5750 8200 5750
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J5
+U 1 1 609DA9D3
+P 8200 5150
+F 0 "J5" H 7757 5196 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 9200 6000 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 8200 5150 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 7850 3900 50  0001 C CNN
+	1    8200 5150
+	1    0    0    -1  
+$EndComp
+Text HLabel 10550 4200 0    50   Input ~ 0
+3V3
+Text HLabel 8100 4400 0    50   Input ~ 0
+3V3
+Wire Notes Line
+	7250 6300 9550 6300
+Wire Notes Line
+	7250 4050 7250 6300
+Wire Notes Line
+	9550 4050 7250 4050
+Wire Notes Line
+	9550 6300 9550 4050
+Wire Notes Line
+	11100 5300 9800 5300
+Wire Notes Line
+	11100 4050 11100 5300
+Wire Notes Line
+	9800 4050 11100 4050
+Wire Notes Line
+	9800 5300 9800 4050
+Text Notes 9900 5200 0    50   ~ 0
+Reset Button\n
+Text Notes 7350 6150 0    50   ~ 0
+JTAG connector\n
+Text Label 8700 5050 0    50   ~ 0
+SWDCLK
+Text Label 8700 5250 0    50   ~ 0
+SWO
+Text Label 8700 5150 0    50   ~ 0
+SWDIO
+Text Label 8700 4850 0    50   ~ 0
+NRST
+Connection ~ 8200 5750
+$Comp
+L power:GND #PWR031
+U 1 1 60A09FC6
+P 8200 5750
+F 0 "#PWR031" H 8200 5500 50  0001 C CNN
+F 1 "GND" H 8205 5577 50  0000 C CNN
+F 2 "" H 8200 5750 50  0001 C CNN
+F 3 "" H 8200 5750 50  0001 C CNN
+	1    8200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 609BE69F
+P 10550 4350
+F 0 "R32" H 10620 4396 50  0000 L CNN
+F 1 "10k" H 10620 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 4350 50  0001 C CNN
+F 3 "~" H 10550 4350 50  0001 C CNN
+	1    10550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4900 10550 4900
+$Comp
+L power:GND #PWR033
+U 1 1 60997F96
+P 10400 4900
+F 0 "#PWR033" H 10400 4650 50  0001 C CNN
+F 1 "GND" H 10405 4727 50  0000 C CNN
+F 2 "" H 10400 4900 50  0001 C CNN
+F 3 "" H 10400 4900 50  0001 C CNN
+	1    10400 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 10400 4900
+Wire Wire Line
+	10200 4900 10400 4900
+Wire Wire Line
+	10200 4800 10200 4900
+Connection ~ 10550 4500
+$Comp
+L Switch:SW_Push SW4
+U 1 1 60987974
+P 10550 4700
+F 0 "SW4" V 10504 4848 50  0000 L CNN
+F 1 "SW_Push" V 10595 4848 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10550 4900 50  0001 C CNN
+F 3 "~" H 10550 4900 50  0001 C CNN
+	1    10550 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 4500 10550 4500
+Wire Wire Line
+	10050 4500 10200 4500
+Connection ~ 10200 4500
+$Comp
+L Device:C C92
+U 1 1 60982E4F
+P 10200 4650
+F 0 "C92" H 10315 4696 50  0000 L CNN
+F 1 "C" H 10315 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10238 4500 50  0001 C CNN
+F 3 "~" H 10200 4650 50  0001 C CNN
+	1    10200 4650
+	1    0    0    -1  
+$EndComp
+Text Label 10050 4500 2    50   ~ 0
+NRST
 $EndSCHEMATC
