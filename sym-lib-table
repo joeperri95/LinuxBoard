@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name LinuxBoard)(type Legacy)(uri ${KIPRJMOD}/libs/LinuxBoard.lib)(options "")(descr ""))
+  (lib (name LinuxBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/LinuxBoard-rescue.lib)(options "")(descr ""))
 )
