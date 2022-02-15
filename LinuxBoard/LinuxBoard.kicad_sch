@@ -9,16 +9,22 @@
       (property "Reference" "TP" (id 0) (at 0 6.858 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Connector_TestPoint" (id 1) (at 0 5.08 0)
+      (property "Value" "TestPoint" (id 1) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 5.08 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 5.08 0 0)
+      (property "Datasheet" "~" (id 3) (at 5.08 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Pin* Test*" (id 4) (at 0 0 0)
+      (property "ki_keywords" "test point tp" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "test point" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "TestPoint_0_1"
@@ -38,16 +44,22 @@
       (property "Reference" "H" (id 0) (at 0 6.35 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Mechanical_MountingHole_Pad" (id 1) (at 0 4.445 0)
+      (property "Value" "MountingHole_Pad" (id 1) (at 0 4.445 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "MountingHole*Pad*" (id 4) (at 0 0 0)
+      (property "ki_keywords" "mounting hole" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole with connection" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*Pad*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "MountingHole_Pad_0_1"
@@ -67,13 +79,19 @@
       (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "power_GND" (id 1) (at 0 -3.81 0)
+      (property "Value" "GND" (id 1) (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "GND_0_1"
@@ -233,6 +251,10 @@
   (wire (pts (xy 44.45 50.8) (xy 46.99 50.8))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 71af7b65-0e6b-402e-b1a4-b66be507b4dc)
+  )
+  (wire (pts (xy 171.45 77.47) (xy 184.15 77.47))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 7bf4ed46-b136-490c-81a4-fd2e57f97774)
   )
   (wire (pts (xy 248.92 95.25) (xy 248.92 92.71))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -541,29 +563,13 @@
     (pin "1" (uuid d77aae80-2ebb-449c-8753-33e439daa878))
   )
 
-  (symbol (lib_id "power:GND") (at 252.73 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-000060e9d149)
-    (property "Reference" "#PWR032" (id 0) (at 252.73 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 252.857 100.9142 0))
-    (property "Footprint" "" (id 2) (at 252.73 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 252.73 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e6ba8e5a-5295-4d99-9539-f0f44fc4499c))
-  )
-
   (symbol (lib_id "Connector:TestPoint") (at 209.55 69.85 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612a3670)
     (property "Reference" "TP2" (id 0) (at 214.63 69.85 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (id 1) (at 203.2 67.31 90)
+    (property "Value" "TestPoint" (id 1) (at 219.71 69.85 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 209.55 74.93 0)
@@ -581,7 +587,7 @@
     (property "Reference" "TP3" (id 0) (at 214.63 72.39 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (id 1) (at 203.2 74.93 90)
+    (property "Value" "TestPoint" (id 1) (at 219.71 72.39 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 209.55 77.47 0)
@@ -737,22 +743,6 @@
     (pin "1" (uuid 9ee66366-9074-4bc0-8447-8c0b7199acdf))
   )
 
-  (symbol (lib_id "power:GND") (at 209.55 127 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-0000612f3316)
-    (property "Reference" "#PWR040" (id 0) (at 209.55 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 209.677 131.3942 0))
-    (property "Footprint" "" (id 2) (at 209.55 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 209.55 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 956ad4a4-cb8d-4eef-aba4-03ec6d18e652))
-  )
-
   (symbol (lib_id "Connector:TestPoint") (at 209.55 124.46 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000612f451d)
@@ -805,6 +795,56 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8f03ae41-61bd-4463-bc12-db0dde34447c))
+  )
+
+  (symbol (lib_id "power:GND") (at 209.55 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 46359285-5991-477d-962a-8ed35a3cafaa)
+    (property "Reference" "#PWR0134" (id 0) (at 209.55 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 209.55 132.08 0))
+    (property "Footprint" "" (id 2) (at 209.55 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 209.55 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 93399ce2-274b-476b-979e-b4bc53252f75))
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 184.15 77.47 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 4e62e619-95fc-4b92-863d-33b1d2b0cf40)
+    (property "Reference" "TP15" (id 0) (at 189.23 77.47 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (id 1) (at 194.31 77.47 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (id 2) (at 184.15 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 184.15 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3a9cc0ce-91bd-40d5-834f-73b6cd9fc5a0))
+  )
+
+  (symbol (lib_id "power:GND") (at 252.73 96.52 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid b26e4b44-cfd1-4792-945c-7c6b8358a15c)
+    (property "Reference" "#PWR0133" (id 0) (at 252.73 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 252.73 101.6 0))
+    (property "Footprint" "" (id 2) (at 252.73 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 252.73 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dd601297-73be-43e8-bc33-80be82309ea3))
   )
 
   (sheet (at 91.44 46.99) (size 36.83 82.55) (fields_autoplaced)
@@ -927,14 +967,14 @@
     )
   )
 
-  (sheet (at 180.34 46.99) (size 21.59 27.94) (fields_autoplaced)
+  (sheet (at 180.34 46.99) (size 21.59 27.94)
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-0000601728e9)
     (property "Sheet name" "MPU_Power" (id 0) (at 180.34 46.2784 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheet file" "MPU_Power.kicad_sch" (id 1) (at 180.34 75.5146 0)
+    (property "Sheet file" "MPU_Power.kicad_sch" (id 1) (at 204.47 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "PMIC_VDD" input (at 180.34 54.61 180)
@@ -1113,7 +1153,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 966ee9ec-860e-45bb-af89-30bda72b2032)
     )
-    (pin "VTT_DDR3" input (at 171.45 93.98 0)
+    (pin "VTT_DDR3" input (at 171.45 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 83184391-76ed-44f0-8cd0-01f89f157bdb)
     )
@@ -1302,9 +1342,6 @@
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000060a09fc6"
       (reference "#PWR031") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060e9d149"
-      (reference "#PWR032") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000060997f96"
       (reference "#PWR033") (unit 1) (value "GND") (footprint "")
     )
@@ -1326,10 +1363,7 @@
     (path "/00000000-0000-0000-0000-000060172ad8/00000000-0000-0000-0000-00006118d23d"
       (reference "#PWR039") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000612f3316"
-      (reference "#PWR040") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000601728e9/00000000-0000-0000-0000-00006120e799"
+    (path "/00000000-0000-0000-0000-0000601728e9/cd8a13d8-fa29-41e1-a6c6-eb09c14011c1"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000060e94f4d"
@@ -1424,6 +1458,12 @@
     )
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000060df9052"
       (reference "#PWR0132") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b26e4b44-cfd1-4792-945c-7c6b8358a15c"
+      (reference "#PWR0133") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/46359285-5991-477d-962a-8ed35a3cafaa"
+      (reference "#PWR0134") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000601728c0/00000000-0000-0000-0000-00006119821b"
       (reference "C1") (unit 1) (value "12p") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -1731,14 +1771,14 @@
     (path "/00000000-0000-0000-0000-000060172b24/00000000-0000-0000-0000-000061b46629"
       (reference "F2") (unit 1) (value "3A") (footprint "Fuse:Fuse_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000060172b24/00000000-0000-0000-0000-000060637b8b"
-      (reference "FB1") (unit 1) (value "Ferrite_Bead") (footprint "Inductor_SMD:L_0603_1608Metric")
+    (path "/00000000-0000-0000-0000-000060172ad8/f8f5de03-9554-4f68-8bc0-dcafc748ef47"
+      (reference "FB1") (unit 1) (value "FerriteBead") (footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000060172ad8/00000000-0000-0000-0000-000061079906"
-      (reference "FB2") (unit 1) (value "Ferrite_Bead") (footprint "Inductor_SMD:L_0603_1608Metric")
+    (path "/00000000-0000-0000-0000-000060172b24/649c99fa-1ecd-49fe-935d-5e913074b224"
+      (reference "FB2") (unit 1) (value "FerriteBead") (footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000060172b24/00000000-0000-0000-0000-000061b46623"
-      (reference "FB4") (unit 1) (value "Ferrite_Bead") (footprint "Inductor_SMD:L_0603_1608Metric")
+    (path "/00000000-0000-0000-0000-000060172b24/d24b0fe3-fe1a-43e8-9ee1-2c35d62d3f86"
+      (reference "FB3") (unit 1) (value "FerriteBead") (footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000060e95d0c"
       (reference "H1") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_2.5mm_Pad")
@@ -1881,11 +1921,14 @@
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000060dbe80f"
       (reference "R30") (unit 1) (value "100") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-0000601728c0/81428857-5563-4f54-bb0b-7627a0deeae3"
+      (reference "R31") (unit 1) (value "50k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-0000609be69f"
       (reference "R32") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000060172a77/00000000-0000-0000-0000-000061444559"
-      (reference "R33") (unit 1) (value "3K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R33") (unit 1) (value "3K") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000060172b24/00000000-0000-0000-0000-000060e1534b"
       (reference "R34") (unit 1) (value "0") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -1895,6 +1938,18 @@
     )
     (path "/00000000-0000-0000-0000-000060172ad8/00000000-0000-0000-0000-00006118cb6b"
       (reference "R36") (unit 1) (value "DNP") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-0000601728c0/dabd0e43-eac5-4e80-8b46-939e70028150"
+      (reference "R37") (unit 1) (value "50k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-0000601728c0/6bcfd7e7-d434-4568-8f07-61e27ffd4d8f"
+      (reference "R38") (unit 1) (value "50k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-0000601728c0/7f0c7b9e-9352-41de-a5ce-3a72528a0268"
+      (reference "R39") (unit 1) (value "50k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-0000601728c0/68622d52-3409-4ab3-a1fb-d76107500131"
+      (reference "R40") (unit 1) (value "50k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-0000601728c0/00000000-0000-0000-0000-0000605563b9"
       (reference "SW1") (unit 1) (value "SW_DIP_x03") (footprint "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_Omron_A6S-310x_W8.9mm_P2.54mm")
@@ -1953,6 +2008,9 @@
     (path "/00000000-0000-0000-0000-0000612f451d"
       (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
+    (path "/4e62e619-95fc-4b92-863d-33b1d2b0cf40"
+      (reference "TP15") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
     (path "/00000000-0000-0000-0000-0000601728c0/00000000-0000-0000-0000-00006022a811"
       (reference "U1") (unit 1) (value "STM32MP151AAB3") (footprint "LinuxBoard:STM32MP151AAB3")
     )
@@ -1975,9 +2033,9 @@
       (reference "U2") (unit 1) (value "MT41K64M16TW-107_AAT_J_TR") (footprint "LinuxBoard:MT41K64M16TW-107_AAT_J_TR")
     )
     (path "/00000000-0000-0000-0000-000060172ad8/00000000-0000-0000-0000-0000601a03d3"
-      (reference "U3") (unit 1) (value "DP83848C") (footprint "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm")
+      (reference "U3") (unit 1) (value "DP83848C") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
-    (path "/00000000-0000-0000-0000-000060172b24/00000000-0000-0000-0000-000060173c27"
+    (path "/00000000-0000-0000-0000-000060172b24/839d2edb-ef11-43e8-b687-6a72f5a4fcc9"
       (reference "U4") (unit 1) (value "STPMIC1APQR") (footprint "LinuxBoard:STPMIC1APQR")
     )
     (path "/00000000-0000-0000-0000-0000601728c0/00000000-0000-0000-0000-00006061525c"

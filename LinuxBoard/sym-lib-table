@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "LinuxBoard")(type "KiCad")(uri "${KIPRJMOD}/libs/LinuxBoard.kicad_sym")(options "")(descr ""))
+  (lib (name "LinuxBoard-rescue")(type "Legacy")(uri "${KIPRJMOD}/LinuxBoard-rescue.lib")(options "")(descr ""))
+)
