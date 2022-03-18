@@ -21,6 +21,7 @@ TI Ethernet PHY [Datasheet](https://www.ti.com/lit/ds/symlink/dp83848c.pdf?HQS=d
 
 TN-41-13 [Routing guide](https://www.micron.com/-/media/client/global/Documents/Products/Technical%20Note/DRAM/tn4113_ddr3_point_to_point_design.pdf)
 
+AN3940 [DDR3 Checklist](https://www.nxp.com/files-static/32bit/doc/app_note/AN3940.pdf)
 
 ### STM32MP151
 
